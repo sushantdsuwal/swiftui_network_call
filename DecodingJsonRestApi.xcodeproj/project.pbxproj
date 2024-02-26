@@ -14,6 +14,8 @@
 		46B90CEB2B8C42FA006CDE97 /* DecodingJsonRestApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90CEA2B8C42FA006CDE97 /* DecodingJsonRestApiTests.swift */; };
 		46B90CF52B8C42FA006CDE97 /* DecodingJsonRestApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90CF42B8C42FA006CDE97 /* DecodingJsonRestApiUITests.swift */; };
 		46B90CF72B8C42FA006CDE97 /* DecodingJsonRestApiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90CF62B8C42FA006CDE97 /* DecodingJsonRestApiUITestsLaunchTests.swift */; };
+		46B90D082B8C44C5006CDE97 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90D072B8C44C5006CDE97 /* Post.swift */; };
+		46B90D0B2B8C76E4006CDE97 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90D0A2B8C76E4006CDE97 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		46B90CF02B8C42FA006CDE97 /* DecodingJsonRestApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecodingJsonRestApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B90CF42B8C42FA006CDE97 /* DecodingJsonRestApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingJsonRestApiUITests.swift; sourceTree = "<group>"; };
 		46B90CF62B8C42FA006CDE97 /* DecodingJsonRestApiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingJsonRestApiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		46B90D072B8C44C5006CDE97 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		46B90D0A2B8C76E4006CDE97 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,9 @@
 		46B90CD82B8C42F9006CDE97 /* DecodingJsonRestApi */ = {
 			isa = PBXGroup;
 			children = (
+				46B90D0C2B8C7DA0006CDE97 /* Screens */,
+				46B90D092B8C76B5006CDE97 /* Services */,
+				46B90D062B8C448E006CDE97 /* Models */,
 				46B90CD92B8C42F9006CDE97 /* DecodingJsonRestApiApp.swift */,
 				46B90CDB2B8C42F9006CDE97 /* ContentView.swift */,
 				46B90CDD2B8C42FA006CDE97 /* Assets.xcassets */,
@@ -125,6 +132,29 @@
 				46B90CF62B8C42FA006CDE97 /* DecodingJsonRestApiUITestsLaunchTests.swift */,
 			);
 			path = DecodingJsonRestApiUITests;
+			sourceTree = "<group>";
+		};
+		46B90D062B8C448E006CDE97 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				46B90D072B8C44C5006CDE97 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		46B90D092B8C76B5006CDE97 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				46B90D0A2B8C76E4006CDE97 /* Network.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		46B90D0C2B8C7DA0006CDE97 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B90D082B8C44C5006CDE97 /* Post.swift in Sources */,
 				46B90CDC2B8C42F9006CDE97 /* ContentView.swift in Sources */,
+				46B90D0B2B8C76E4006CDE97 /* Network.swift in Sources */,
 				46B90CDA2B8C42F9006CDE97 /* DecodingJsonRestApiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
