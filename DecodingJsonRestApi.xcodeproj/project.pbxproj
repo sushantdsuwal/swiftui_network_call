@@ -16,6 +16,7 @@
 		46B90D082B8C44C5006CDE97 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90D072B8C44C5006CDE97 /* Post.swift */; };
 		46B90D0B2B8C76E4006CDE97 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90D0A2B8C76E4006CDE97 /* Network.swift */; };
 		46B90D0E2B8C7FBF006CDE97 /* PostsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90D0D2B8C7FBF006CDE97 /* PostsScreen.swift */; };
+		46B90D102B8C81AB006CDE97 /* PostDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90D0F2B8C81AB006CDE97 /* PostDetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		46B90D072B8C44C5006CDE97 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		46B90D0A2B8C76E4006CDE97 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		46B90D0D2B8C7FBF006CDE97 /* PostsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsScreen.swift; sourceTree = "<group>"; };
+		46B90D0F2B8C81AB006CDE97 /* PostDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				46B90D0D2B8C7FBF006CDE97 /* PostsScreen.swift */,
+				46B90D0F2B8C81AB006CDE97 /* PostDetailScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B90D082B8C44C5006CDE97 /* Post.swift in Sources */,
+				46B90D102B8C81AB006CDE97 /* PostDetailScreen.swift in Sources */,
 				46B90D0B2B8C76E4006CDE97 /* Network.swift in Sources */,
 				46B90D0E2B8C7FBF006CDE97 /* PostsScreen.swift in Sources */,
 				46B90CDA2B8C42F9006CDE97 /* DecodingJsonRestApiApp.swift in Sources */,
