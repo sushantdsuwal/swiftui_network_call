@@ -10,19 +10,37 @@ import SwiftUI
 struct PostDetailScreen: View {
     let post: Post;
     @StateObject var commentsVm = CommentViewModel()
+    @State private var isLoading = false
+
     
     var body: some View {
         VStack {
             PostView(post: post)
                 .padding(.all)
-            CommentList(comments: commentsVm.commentsData)
-                .listStyle(.plain)
+            Spacer()
+            VStack {
+                   if isLoading {
+                       Spacer()
+                       ProgressView("Loading comments...")
+                       Spacer()
+                   } else {
+                       if !commentsVm.commentsData.isEmpty {
+                           CommentList(comments: commentsVm.commentsData)
+                       } else {
+                           Text("No comments available")
+                               .foregroundColor(.gray)
+                       }
+                   }
+                }
                 .onAppear(){
+                    isLoading = true
                     Task {
                         await commentsVm.fetchComments(forPostId: post.id)
+                        isLoading = false
                     }
                 }
         }
+        .navigationBarTitle("", displayMode: .inline)
     }
 }
 
@@ -36,6 +54,7 @@ struct CommentList: View {
                 Text(comment.body).font(.caption)
             }
         }
+        .listStyle(.plain)
     }
 }
 
