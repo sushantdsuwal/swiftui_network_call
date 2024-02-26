@@ -15,7 +15,7 @@ struct PostsScreen: View {
             VStack {
                 List(vm.postData) { post in
                     NavigationLink(value: post) {
-                        PostList(post: post)
+                        PostView(post: post)
                     }
                 }
                 .navigationTitle("Posts")
@@ -34,7 +34,7 @@ struct PostsScreen: View {
     }
 }
 
-struct PostList: View {
+struct PostView: View {
     let post: Post
     
     var body: some View {
