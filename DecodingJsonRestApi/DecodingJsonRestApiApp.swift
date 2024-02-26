@@ -11,7 +11,7 @@ import SwiftUI
 struct DecodingJsonRestApiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PostsScreen()
         }
     }
 }

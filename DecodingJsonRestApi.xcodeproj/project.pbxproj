@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		46B90CDA2B8C42F9006CDE97 /* DecodingJsonRestApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90CD92B8C42F9006CDE97 /* DecodingJsonRestApiApp.swift */; };
-		46B90CDC2B8C42F9006CDE97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90CDB2B8C42F9006CDE97 /* ContentView.swift */; };
 		46B90CDE2B8C42FA006CDE97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B90CDD2B8C42FA006CDE97 /* Assets.xcassets */; };
 		46B90CE12B8C42FA006CDE97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B90CE02B8C42FA006CDE97 /* Preview Assets.xcassets */; };
 		46B90CEB2B8C42FA006CDE97 /* DecodingJsonRestApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90CEA2B8C42FA006CDE97 /* DecodingJsonRestApiTests.swift */; };
@@ -16,6 +15,7 @@
 		46B90CF72B8C42FA006CDE97 /* DecodingJsonRestApiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90CF62B8C42FA006CDE97 /* DecodingJsonRestApiUITestsLaunchTests.swift */; };
 		46B90D082B8C44C5006CDE97 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90D072B8C44C5006CDE97 /* Post.swift */; };
 		46B90D0B2B8C76E4006CDE97 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90D0A2B8C76E4006CDE97 /* Network.swift */; };
+		46B90D0E2B8C7FBF006CDE97 /* PostsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B90D0D2B8C7FBF006CDE97 /* PostsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		46B90CD62B8C42F9006CDE97 /* DecodingJsonRestApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecodingJsonRestApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B90CD92B8C42F9006CDE97 /* DecodingJsonRestApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingJsonRestApiApp.swift; sourceTree = "<group>"; };
-		46B90CDB2B8C42F9006CDE97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		46B90CDD2B8C42FA006CDE97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46B90CE02B8C42FA006CDE97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		46B90CE62B8C42FA006CDE97 /* DecodingJsonRestApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecodingJsonRestApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +47,7 @@
 		46B90CF62B8C42FA006CDE97 /* DecodingJsonRestApiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingJsonRestApiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		46B90D072B8C44C5006CDE97 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		46B90D0A2B8C76E4006CDE97 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		46B90D0D2B8C7FBF006CDE97 /* PostsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,6 @@
 				46B90D092B8C76B5006CDE97 /* Services */,
 				46B90D062B8C448E006CDE97 /* Models */,
 				46B90CD92B8C42F9006CDE97 /* DecodingJsonRestApiApp.swift */,
-				46B90CDB2B8C42F9006CDE97 /* ContentView.swift */,
 				46B90CDD2B8C42FA006CDE97 /* Assets.xcassets */,
 				46B90CDF2B8C42FA006CDE97 /* Preview Content */,
 			);
@@ -153,6 +152,7 @@
 		46B90D0C2B8C7DA0006CDE97 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				46B90D0D2B8C7FBF006CDE97 /* PostsScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -288,8 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B90D082B8C44C5006CDE97 /* Post.swift in Sources */,
-				46B90CDC2B8C42F9006CDE97 /* ContentView.swift in Sources */,
 				46B90D0B2B8C76E4006CDE97 /* Network.swift in Sources */,
+				46B90D0E2B8C7FBF006CDE97 /* PostsScreen.swift in Sources */,
 				46B90CDA2B8C42F9006CDE97 /* DecodingJsonRestApiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
